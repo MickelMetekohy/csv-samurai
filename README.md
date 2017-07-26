@@ -44,6 +44,8 @@ Slice CSV's into manageable chunks.
 
 ### CSV
 
+https://www.drupal.org/node/622710
+
 "Comma-separated values", a simple file format used to move tabular data between programs and databases. See also Comma-separated values on Wikipedia. The needed/correct line-ending-char(s) of a Feeds-imported CSV-file depends on the type of the operating system of the www-server:
 
 If you are using a Linux-Server, use only "LF" at the line-end of the CSV-file.
