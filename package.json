@@ -1,18 +1,59 @@
 {
-  "name": "slices.com",
+  "name": "coolidge_corner",
   "version": "1.0.0",
-  "description": "Slice CSV's into manageable chunks",
   "main": "index.js",
+  "author": "Mickel Metekohy <mkr.metekohy@gmail.com>",
+  "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --progress",
+    "build:production": "webpack --progress -p",
+    "start": "webpack --watch",
+    "server": "webpack-dev-server --open"
   },
   "repository": {
     "type": "git",
-    "url": "git repo here"
+    "url": ""
   },
-  "author": "mickel metekohy",
-  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.7.5",
+    "babel-core": "^6.23.1",
+    "babel-eslint": "^8.2.2",
+    "babel-loader": "^6.3.2",
+    "babel-preset-es2015": "^6.13.2",
+    "browser-sync": "^2.18.8",
+    "browser-sync-webpack-plugin": "^1.1.4",
+    "clean-webpack-plugin": "^0.1.16",
+    "copy-webpack-plugin": "^4.0.1",
+    "cross-env": "^3.1.4",
+    "css-loader": "^0.26.2",
+    "cssnano": "^3.10.0",
+    "eslint": "^4.18.2",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "extract-text-webpack-plugin": "^2.0.0",
+    "file-loader": "^0.11.2",
+    "glob": "^7.1.2",
+    "html-loader": "^0.5.5",
+    "html-webpack-inline-svg-plugin": "^1.2.4",
+    "html-webpack-plugin": "^3.0.4",
+    "html-webpack-pug-plugin": "^0.3.0",
+    "imagemin-mozjpeg": "^7.0.0",
+    "imagemin-webpack-plugin": "^2.0.0",
+    "node-sass": "^4.5.0",
+    "optimize-css-assets-webpack-plugin": "^1.3.0",
+    "postcss-loader": "^1.3.2",
+    "pug": "^2.0.0-rc.4",
+    "pug-html-loader": "^1.1.5",
+    "sass-loader": "^6.0.2",
+    "style-loader": "^0.13.2",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "2.4.1"
+  },
   "dependencies": {
-
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.12.9"
   }
 }

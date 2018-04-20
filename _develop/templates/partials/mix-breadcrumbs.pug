@@ -1,0 +1,19 @@
+//- mix-breadcrumbs.pug
+//- BREADCRUMBS
+//- param 1: array of objects
+//- param 2: active page
+//- +breadcrumbs([{p:path-page-title, u:'url-to-path-page'}], 'active page')
+//- +breadcrumbs([
+        {p: 'Services', u: 'services.html'},
+        {p: 'Digital', u: 'services/digital.html'}],
+        'Web Apps'
+    )
+mixin breadcrumbs(path, active)
+    nav(aria-label="breadcrumb")
+        ol.breadcrumb.pt-5
+            li.breadcrumb-item
+                a(href="index.html" title="Homepage") Home
+            each item in path
+                li.breadcrumb-item
+                    a(href=item.u title=item.p)= item.p
+            li.breadcrumb-item.active(aria-current="page")= active

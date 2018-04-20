@@ -1,6 +1,10 @@
-# CSVslicer.com
+# CSV Samurai
 
 Slice CSV's into manageable chunks.
+
+HTML PHP PUG SCSS JS WEBPACK GIT ESLINT YARN FILE-LOADING IMAGE-OPTIMIZATION
+
+License: [MIT](https://choosealicense.com/licenses/mit/)
 
 ## Dev on Localmachine
 
@@ -10,34 +14,63 @@ Slice CSV's into manageable chunks.
  - upload_max_filesize = 128M (or higher)
  - post_max_size = 128M (or higher)
 
-## Use
+## Dev
 
-* `npm install` (no scripts yet).
-* Go through `app/index.php` to set the default values and database creds.
-* Start uploading data.
+* clone repo
+* in root folder run `yarn install` to install from package.js
+* in root folder run `yarn start` to run webpack
+* _develop is the development working folder
+* _distribute is the distribution folder
+* HTML / PUG:
+  * in the _develop/ folder
+  * PUG files need to be registered in the webpack plugin section 
+  ```JS
+    new HtmlWebpackPlugin({
+      filename: 'index.html',
+      inject: false,
+      template: './_develop/index.pug',
+    }),
+  ```
+* IMAGES
+  * in the _develop/images folder
+  * images folder will be copied to _distribute
+* SCSS:
+  * in the _develop/scss folder
+  * all components are imported to app.scss
+  * app.scss is imported to app.js so webpack can bundle it
+  * scss bundle output is in _distribute/css/app.bundle.css
+  * file path must be from the _develop folder so webpack can deal with them
+  * please use BEM [http://getbem.com/](http://getbem.com/)
+* JS:
+  * in the _develop/js folder
+  * all libraries and components are imported to app.js
+  * js bundle output is in _distribute/js/app.bundle.js
+  * eslint airbnb preset eslint-config-airbnb with react (eslint-config-airbnb-base without react)
+* FONTS
+  * in the _develop/fonts folder
+  * images folder will be copied to _distribute
+* PACKAGES
+  * jquery
+  * bootstrap
+  * slick-carousel
+
+See package.json and webpack.config.js for more details on the build process.
+
+## Use
 
 * Save excel as CSV UTF-8 (comma delimited).
 * Open CSV, delete blank rows, and save again.
 * Upload to CSVslicer.com.
 * Set Rows per slice.
-* Set header option.
+* TODO Set header option.
 * Slice.
-* Download zip.
+* TODO Download zip.
 
 ## @TODO
 
-* Setup build process with webpack or gulp.
-* Why is one file not saved in the zip file.
-* create only zip not folder on the server.
 * Download link.
-* GUI rows per slice input.
 * GUI header on all slices / header on first slice / no header.
-* file dorp area.
-* test if UTF-8.
 * GUI for line endings / convert line endings / crlf.
-* trim the end of the file, remove empty rows (rows that only have commas).
-* https.
-* save uploads.
 * structure/naming of the zip.
 
 ## @NOTE

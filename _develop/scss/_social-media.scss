@@ -1,0 +1,41 @@
+.social-media {
+  li {
+    display: inline-block;
+    margin: 3px;
+  }
+  a {
+    display: block;
+    border-radius: 15px;
+    border: 1px solid white;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    &::before {
+      font-family: 'FontAwesome';
+      font-size: 20px;
+      color: white;
+      content: '\f0c0';
+    }
+  }
+  li [href*="dribbble.com"]::before {content: '\f17d';}
+  li [href*="facebook.com"]::before {content: '\f09a';}
+  li [href*="flickr.com"]::before {content: '\f16e';}
+  li [href*="foursquare.com"]::before {content: '\f180';}
+  li [href*="github.com"]::before {content: '\f09b';}
+  li [href*="plus.google.com"]::before {content: '\f0d5';}
+  li [href*="instagram.com"]::before {content: '\f16d';}
+  li [href*="linkedin.com"]::before {content: '\f0e1';}
+  li [href*="jsfiddle.com"]::before {content: '\f1cc';}
+  li [href*="pinterest.com"]::before {content: '\f0d2';}
+  li [href*="reddit.com"]::before {content: '\f1a1';}
+  li [href*="soundcloud.com"]::before {content: '\f1be';}
+  li [href*="stackoverflow.com"]::before {content: '\f16c';}
+  li [href*="tumblr.com"]::before {content: '\f173';}
+  li [href*="twitter.com"]::before {content: '\f099';}
+  li [href*="vimeo.com"]::before {content: '\f194';}
+  li [href*="vine.co"]::before {content: '\f1ca';}
+  li [href*="yelp.com"]::before {content: '\f1e9';}
+  li [href*="youtube.com"]::before {content: '\f167';}
+  li [href*="wordpress.com"]::before {content: '\f19a';}
+}
+

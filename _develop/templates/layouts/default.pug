@@ -1,0 +1,39 @@
+//- default.pug
+include ../partials/mix-breadcrumbs.pug
+include ../partials/mix-hero.pug
+include ../partials/mix-section.pug
+
+//- site variables
+- site_url = 'http://csvsamurai.localmachine';
+
+block pageVariables
+  - title = "Coolidge Corner";
+  - metaAuthor = "Mickel Metekohy, mkr.metekohy@gmail.com";
+  - metaDescription = "";
+  - bodyClass = "";
+  - page = "index";
+  - pageType = 'sub-page';
+  - pageClass = 'theater-page';
+
+
+block php
+
+doctype html
+html(lang="en")
+
+  block head
+    include ../partials/head.pug
+
+  body(class= bodyClass)
+    div#site-wrapper(class= pageClass + ' ' + pageType)
+
+      block header
+        include ../partials/header.pug 
+
+      block content
+
+      block footer
+        include ../partials/footer.pug
+
+    block scripts
+      script(src='js/app.bundle.js')
