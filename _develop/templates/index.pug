@@ -1,0 +1,60 @@
+//- index.pug
+//- extends layouts/default.pug
+
+//- page variables
+//- block pageVariables
+  - title = "Coolidge Corner";
+  - metaAuthor = "Mickel Metekohy, mkr.metekohy@gmail.com";
+  - metaDescription = "";
+  - bodyClass = "";
+  - page = "index";
+  - pageType = 'sub-page';
+  - pageClass = 'theater-page';
+
+//- block prepend head
+//- block head
+//- block append head
+
+//- block prepend header
+//- block header
+//- block append header
+
+//- block content
+
+//- block prepend footer
+//- block footer
+//- block append footer
+
+//- block prepend scripts
+//- block scripts
+//- block append scripts
+
+extends layouts/default.pug
+
+//- page variables
+block pageVariables
+  - title = 'Home';
+  - page = 'index';
+  - pageType = 'home-page';
+  - pageClass = 'home-page';
+
+block php
+    include partials/php.pug.php
+
+block content
+  +hero("hero-home-page text-center text-white")
+    h1 CSV Samurai
+    p.lead Slice up a CSV into manageble CSV files
+
+  +section("main csv")
+    div.row
+      div.col.text-center 
+        <?php echo (isset($mkr)) ? $mkr->getNotifications() : false; ?>
+        form(enctype="multipart/form-data" action="/" method="POST")
+          div.form-group
+            label(for="csvfile") CSV Drop Zone
+            input#csvfile.form-control(accept=".csv" type="file" name="csvfile" placeholder="*.csv")
+          div.form-group
+            label(for="rows-per-slice") Rows Per Slice (min="10" max="3000" step="10"):
+            input#rows-per-slice.form-control(type="number" min="10" max="3000" step="10" name="rows-per-slice" value="1000")
+          button.button.button-blue(type="submit") Slice

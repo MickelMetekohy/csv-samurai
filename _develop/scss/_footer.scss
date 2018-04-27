@@ -1,0 +1,65 @@
+#site-footer {
+    max-width: 1400px;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    h6 {
+        color: $red;
+        font-size: 18px;
+        margin-bottom: 15px;
+        -webkit-appearance: none !important;
+    }
+    .footerAddress,
+    .footerContactInfo,
+    .footerHours {
+        border-top: 1px solid #ccc;
+        cursor: pointer;
+    }
+    a {
+        color: $red;
+        text-decoration: underline;
+        font-size: 14px;
+    }
+    p {
+        color: #111;
+        font-size: 14px;
+        max-width: 540px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer-logo {
+        height: 80px;
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 25px;
+        background-color: $red;
+        img {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+    .container {
+        max-width: 100%;
+    }
+    .social-media {
+        margin: 0;
+        padding: 0;
+        a {
+          border: 1px solid red;
+          text-decoration: none;
+          text-align: center;
+          &::before {
+            color: red;
+          }
+          &:hover {
+              background-color: red;
+              &::before {
+                color: #fff;
+            }
+          }
+        }
+    }
+}

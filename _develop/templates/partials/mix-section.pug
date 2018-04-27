@@ -1,0 +1,15 @@
+//- mix-section.pug
+//- SECTION
+//- param 1: string of space seperated class names
+//- content: block
+//- +section("who-we-are jumbotron")
+//-   block
+mixin section(classes)
+  //- section.who-we-are.jumbotron(style="background-image:url('images/tufts-bg-who-we-are.jpg')")
+  //- section.what-we-do.jumbotron(style="background-image:url('images/tufts-What-We-Do-Background-Image.jpg')")
+  //- section.portfolio.jumbotron(style="background-image:url('images/tufts-bg-portfolio.jpg')")
+  //- section.contact.jumbotron(style="background-image:url('images/tufts-bg-contact.jpg')")
+  section(class="mix-section jumbotron " + classes)
+    div.container
+      block
+

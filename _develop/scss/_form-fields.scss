@@ -1,0 +1,114 @@
+// .form-control {
+//   &::placeholder {
+//     color: #fff;
+//   }
+// }
+
+// input,
+// textarea {
+//   &::-webkit-input-placeholder {
+//     color: #fff;
+//     opacity: 1;
+//     transition: opacity 0.3s ease;
+//     letter-spacing: 1px;
+//   }
+//   &::-moz-placeholder {
+//     color: #fff;
+//     opacity: 1;
+//     transition: opacity 0.3s ease;
+//     letter-spacing: 1px;
+//   }
+//   &:-moz-placeholder {
+//     color: #fff;
+//     opacity: 1;
+//     transition: opacity 0.3s ease;
+//     letter-spacing: 1px;
+//   }
+//   &:-ms-input-placeholder {
+//     color: #fff;
+//     opacity: 1;
+//     transition: opacity 0.3s ease;
+//     letter-spacing: 1px;
+//   }
+//   &:focus::-webkit-input-placeholder {
+//     opacity: 0;
+//     transition: opacity 0.3s ease;
+//   }
+//   &:focus::-moz-placeholder {
+//     opacity: 0;
+//     transition: opacity 0.3s ease;
+//   }
+//   &:focus:-moz-placeholder {
+//     opacity: 0;
+//     transition: opacity 0.3s ease;
+//   }
+//   &:focus:-ms-input-placeholder {
+//     opacity: 0;
+//     transition: opacity 0.3s ease;
+//   }
+// }
+
+// input:focus,
+// input:active {
+//   outline: none;
+// }
+
+// input[type="text"],
+// input[type="email"],
+// .form-control:focus {
+//   border: none;
+//   padding: 8px 0;
+//   color: #fff;
+//   font-size: 15px;
+//   width: 100%;
+//   margin-bottom: 14px;
+//   background: none;
+//   border-bottom: 1px solid #ffffff;
+//   -webkit-border-radius: 0;
+//   margin-top: 20px;
+//   box-shadow: none;
+//   &.grey-field {
+//     color: #111;
+//     border-bottom: 1px solid #D6D6D6;
+//   }
+// }
+
+// input[type="submit"],
+// input[type="submit"]:focus {
+//   float: right;
+//   padding-top: 15px;
+//   padding-bottom: 15px;
+//   padding-right: 12%;
+//   padding-left: 12%;
+//   margin: 0px;
+//   margin-top: 20px;
+//   border: none;
+//   border: 1px solid white;
+//   color: white;
+//   background: none;
+//   border-radius: 0px;
+//   &.grey-field {
+//     color: $red;
+//     border: 1px solid $red;
+//   }
+// }
+
+// input[type="submit"]:hover,
+// input[type="submit"]:focus,
+// .btn-primary:hover,
+// .FormButton:hover {
+//   border: 1px solid white;
+//   color: $red !important;
+//   background-color: #ffffff !important;
+//   background: none;
+//   border-radius: 0px;
+//   padding-top: 15px;
+//   padding-bottom: 15px;
+//   padding-right: 12%;
+//   padding-left: 12%;
+//   &.grey-field {
+//     color: #ffffff !important;
+//     border: 1px solid $red;
+//     background-color: $red !important;
+//   }
+// }

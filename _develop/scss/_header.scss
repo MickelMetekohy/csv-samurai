@@ -1,0 +1,66 @@
+#site-header {
+    z-index: 999;
+    background-color: $red;
+    background-color: rgba(255, 0, 0, 0.95);
+    padding: 10px 0;
+    transition: all 0.25s ease;
+    .navbar-brand {
+        width: 220px;
+        height: 40px;
+        display: inline-block;
+        background-color: #fff;
+        .tufts-logo {
+            width: 100px;
+        }
+    }
+    .navbar-toggler {
+        outline: 0;
+        span {
+            font-size: 16px;
+            padding: 10px;
+            position: relative;
+            top: -4px;
+        }
+        .fa {
+            font-size: 30px;
+        }
+        .close-menu {
+            display:none;
+            fill: #fff;
+            width: 22px;
+            top: 2px;
+            height: 22px;
+            position: relative;
+        }
+    }
+    .navbar-collapse {
+        >ul {
+            padding: 80px 0;
+            font-size: 24px;
+            a {
+                padding: 0;
+                margin: 0.5rem 1rem 0.5rem 0;
+                display: inline-block;
+                &:hover {
+                    border-bottom: 1px solid #fff;
+                }
+            }
+            .active a {
+                border-bottom: 2px solid #fff;
+            }
+        }
+    }
+}
+
+.sub-page #site-header {
+    background-color: $red;
+}
+
+#site-header.compressed {
+    position: fixed !important;
+    padding: 0;
+    background-color: rgba(255, 0, 0, 0.95) !important;
+    .navbar-brand {
+        padding: 0;
+    }
+}

@@ -1,0 +1,23 @@
+header#site-header.w-100(class=(pageType == 'home-page') ? 'position-absolute bg-transparent' : '')
+
+  nav.navbar.navbar-expand-lg.navbar-dark: div.container
+
+    //- a.navbar-brand(href="index.html"): img.tufts-logo(src="../images/tufts-logo.png")
+    a.navbar-brand(href="index.html")
+    button.navbar-toggler.collapsed.border-0.text-white(type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation")
+      span
+      i.close-menu(aria-hidden="true"): include ../../images/Close.svg
+      i.fa.fa-bars(aria-hidden="true")
+    div#navbarNav.collapse.navbar-collapse.justify-content-end
+      ul.navbar-nav       
+        - 
+          var menuItems = [
+            {href: ['index','.html'], text: 'CSV Samurai', extraClasses: ''},
+            {href: '#0', text: 'CSV to WPDB', extraClasses: ''}
+          ];
+        each menuItem in menuItems
+          - var active = (page == menuItem.href[0]) ? ' active' : '';
+          li(class="nav-item" + active + menuItem.extraClasses)
+            a.nav-link.text-white(href= menuItem.href[0] + menuItem.href[1])= menuItem.text
+              if active
+                span.sr-only Current page: #{menuItem.text}

@@ -1,0 +1,38 @@
+.button,
+.button-white,
+a.button,
+a.button-white {
+  border: 1px solid white;
+  color: white;
+  padding: 15px 45px;
+  margin: 30px;
+  background: none;
+  font-size: 18px;
+  line-height: 31px;
+  transition: all .25s ease;
+  &:hover {
+    color: #111;
+    background-color: #fff;
+    text-decoration: none;
+  }
+}
+  
+.button-red,
+a.button-red {
+  border: 1px solid $red;
+  color: $red;
+  &:hover {
+    color: #ffffff;
+    background-color: $red;
+  }
+}
+  
+.button-blue,
+a.button-blue {
+  border: 1px solid blue;
+  color: blue;
+  &:hover {
+    color: #ffffff;
+    background-color: blue;
+  }
+}
