@@ -60,7 +60,7 @@ See package.json and webpack.config.js for more details on the build process.
 
 * Save excel as CSV UTF-8 (comma delimited).
 * Open CSV, delete blank rows, and save again.
-* Upload to CSVslicer.com.
+* Upload CSV to [CSVSamurai url].
 * Set Rows per slice.
 * TODO Set header option.
 * Slice.
